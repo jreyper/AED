@@ -1,0 +1,84 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.algoritmos.BusquedaServiceTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 6, Skipped: 0, Time elapsed: 0.045 s <<< FAILURE! -- in com.docencia.algoritmos.BusquedaServiceTest
+com.docencia.algoritmos.BusquedaServiceTest.buscarIndiceElementoExistenteDevuelveIndice -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'buscarIndiceElemento'
+	at com.docencia.algoritmos.BusquedaServiceImpl.buscarIndiceElemento(BusquedaServiceImpl.java:11)
+	at com.docencia.algoritmos.BusquedaServiceTest.buscarIndiceElementoExistenteDevuelveIndice(BusquedaServiceTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.algoritmos.BusquedaServiceTest.buscarIndiceElementoInexistenteDevuelveMenosUno -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'buscarIndiceElemento'
+	at com.docencia.algoritmos.BusquedaServiceImpl.buscarIndiceElemento(BusquedaServiceImpl.java:11)
+	at com.docencia.algoritmos.BusquedaServiceTest.buscarIndiceElementoInexistenteDevuelveMenosUno(BusquedaServiceTest.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.algoritmos.BusquedaServiceTest.buscarIndiceElementoListaNullLanzaExcepcion -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.algoritmos.BusquedaServiceTest.buscarIndiceElementoListaNullLanzaExcepcion(BusquedaServiceTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'buscarIndiceElemento'
+	at com.docencia.algoritmos.BusquedaServiceImpl.buscarIndiceElemento(BusquedaServiceImpl.java:11)
+	at com.docencia.algoritmos.BusquedaServiceTest.lambda$buscarIndiceElementoListaNullLanzaExcepcion$0(BusquedaServiceTest.java:12)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.algoritmos.BusquedaServiceTest.existePalabraIgnorandoMayusculasDevuelveTrue -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'existePalabra'
+	at com.docencia.algoritmos.BusquedaServiceImpl.existePalabra(BusquedaServiceImpl.java:17)
+	at com.docencia.algoritmos.BusquedaServiceTest.existePalabraIgnorandoMayusculasDevuelveTrue(BusquedaServiceTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.algoritmos.BusquedaServiceTest.encontrarMaximoDatosValidosDevuelveMaximo -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'encontrarMaximo'
+	at com.docencia.algoritmos.BusquedaServiceImpl.encontrarMaximo(BusquedaServiceImpl.java:23)
+	at com.docencia.algoritmos.BusquedaServiceTest.encontrarMaximoDatosValidosDevuelveMaximo(BusquedaServiceTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.algoritmos.BusquedaServiceTest.encontrarMaximoListaVaciaLanzaExcepcion -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.algoritmos.BusquedaServiceTest.encontrarMaximoListaVaciaLanzaExcepcion(BusquedaServiceTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'encontrarMaximo'
+	at com.docencia.algoritmos.BusquedaServiceImpl.encontrarMaximo(BusquedaServiceImpl.java:23)
+	at com.docencia.algoritmos.BusquedaServiceTest.lambda$encontrarMaximoListaVaciaLanzaExcepcion$0(BusquedaServiceTest.java:15)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.algoritmos.BusquedaServiceTest.encontrarMinimoDatosValidosDevuelveMinimo -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'encontrarMinimo'
+	at com.docencia.algoritmos.BusquedaServiceImpl.encontrarMinimo(BusquedaServiceImpl.java:29)
+	at com.docencia.algoritmos.BusquedaServiceTest.encontrarMinimoDatosValidosDevuelveMinimo(BusquedaServiceTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.algoritmos.BusquedaServiceTest.contarAparicionesValorExistenteDevuelveCantidad -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'contarApariciones'
+	at com.docencia.algoritmos.BusquedaServiceImpl.contarApariciones(BusquedaServiceImpl.java:35)
+	at com.docencia.algoritmos.BusquedaServiceTest.contarAparicionesValorExistenteDevuelveCantidad(BusquedaServiceTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

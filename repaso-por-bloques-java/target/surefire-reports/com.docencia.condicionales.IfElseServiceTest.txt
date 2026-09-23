@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.condicionales.IfElseServiceTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 7, Skipped: 0, Time elapsed: 0.055 s <<< FAILURE! -- in com.docencia.condicionales.IfElseServiceTest
+com.docencia.condicionales.IfElseServiceTest.clasificarEdadMenorDevuelveMenor -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'clasificarEdad'
+	at com.docencia.condicionales.IfElseServiceImpl.clasificarEdad(IfElseServiceImpl.java:8)
+	at com.docencia.condicionales.IfElseServiceTest.clasificarEdadMenorDevuelveMenor(IfElseServiceTest.java:9)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.condicionales.IfElseServiceTest.clasificarEdadAdultoDevuelveAdulto -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'clasificarEdad'
+	at com.docencia.condicionales.IfElseServiceImpl.clasificarEdad(IfElseServiceImpl.java:8)
+	at com.docencia.condicionales.IfElseServiceTest.clasificarEdadAdultoDevuelveAdulto(IfElseServiceTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.condicionales.IfElseServiceTest.clasificarEdadEdadInvalidaLanzaExcepcion -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.condicionales.IfElseServiceTest.clasificarEdadEdadInvalidaLanzaExcepcion(IfElseServiceTest.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'clasificarEdad'
+	at com.docencia.condicionales.IfElseServiceImpl.clasificarEdad(IfElseServiceImpl.java:8)
+	at com.docencia.condicionales.IfElseServiceTest.lambda$clasificarEdadEdadInvalidaLanzaExcepcion$0(IfElseServiceTest.java:11)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.condicionales.IfElseServiceTest.evaluarNotaAprobadoDevuelveAprobado -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'evaluarNota'
+	at com.docencia.condicionales.IfElseServiceImpl.evaluarNota(IfElseServiceImpl.java:14)
+	at com.docencia.condicionales.IfElseServiceTest.evaluarNotaAprobadoDevuelveAprobado(IfElseServiceTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.condicionales.IfElseServiceTest.evaluarNotaSuspensoDevuelveSuspenso -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'evaluarNota'
+	at com.docencia.condicionales.IfElseServiceImpl.evaluarNota(IfElseServiceImpl.java:14)
+	at com.docencia.condicionales.IfElseServiceTest.evaluarNotaSuspensoDevuelveSuspenso(IfElseServiceTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.condicionales.IfElseServiceTest.puedeAccederActivoYMayorDevuelveTrue -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'puedeAcceder'
+	at com.docencia.condicionales.IfElseServiceImpl.puedeAcceder(IfElseServiceImpl.java:20)
+	at com.docencia.condicionales.IfElseServiceTest.puedeAccederActivoYMayorDevuelveTrue(IfElseServiceTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.condicionales.IfElseServiceTest.clasificarTemperaturaCalorDevuelveCalor -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'clasificarTemperatura'
+	at com.docencia.condicionales.IfElseServiceImpl.clasificarTemperatura(IfElseServiceImpl.java:26)
+	at com.docencia.condicionales.IfElseServiceTest.clasificarTemperaturaCalorDevuelveCalor(IfElseServiceTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.condicionales.IfElseServiceTest.calcularResultadoComparacionIgualesDevuelveIguales -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'calcularResultadoComparacion'
+	at com.docencia.condicionales.IfElseServiceImpl.calcularResultadoComparacion(IfElseServiceImpl.java:32)
+	at com.docencia.condicionales.IfElseServiceTest.calcularResultadoComparacionIgualesDevuelveIguales(IfElseServiceTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

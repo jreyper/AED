@@ -1,0 +1,15 @@
+com/docencia/numeros/MathServiceTest.class
+com/docencia/colecciones/ListServiceTest.class
+com/docencia/numeros/IntegerServiceTest.class
+com/docencia/ficheros/CsvServiceTest.class
+com/docencia/colecciones/MapServiceTest.class
+com/docencia/regex/RegexServiceTest.class
+com/docencia/condicionales/IfElseServiceTest.class
+com/docencia/colecciones/SetServiceTest.class
+com/docencia/algoritmos/BusquedaServiceTest.class
+com/docencia/cadenas/StringServiceTest.class
+com/docencia/fechas/LocalDateServiceTest.class
+com/docencia/sqlite/ClienteDbServiceTest.class
+com/docencia/herencia/HerenciaServiceTest.class
+com/docencia/algoritmos/OrdenacionServiceTest.class
+com/docencia/condicionales/SwitchServiceTest.class

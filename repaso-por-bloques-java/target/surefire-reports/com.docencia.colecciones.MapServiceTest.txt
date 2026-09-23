@@ -1,0 +1,68 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.colecciones.MapServiceTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 6, Skipped: 0, Time elapsed: 0.020 s <<< FAILURE! -- in com.docencia.colecciones.MapServiceTest
+com.docencia.colecciones.MapServiceTest.contarFrecuenciaPalabrasDatosValidosDevuelveFrecuencias -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'contarFrecuenciaPalabras'
+	at com.docencia.colecciones.MapServiceImpl.contarFrecuenciaPalabras(MapServiceImpl.java:12)
+	at com.docencia.colecciones.MapServiceTest.contarFrecuenciaPalabrasDatosValidosDevuelveFrecuencias(MapServiceTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.colecciones.MapServiceTest.contarFrecuenciaPalabrasListaVaciaDevuelveMapaVacio -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'contarFrecuenciaPalabras'
+	at com.docencia.colecciones.MapServiceImpl.contarFrecuenciaPalabras(MapServiceImpl.java:12)
+	at com.docencia.colecciones.MapServiceTest.contarFrecuenciaPalabrasListaVaciaDevuelveMapaVacio(MapServiceTest.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.colecciones.MapServiceTest.obtenerValorPorClaveClaveInexistenteDevuelveCero -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'obtenerValorPorClave'
+	at com.docencia.colecciones.MapServiceImpl.obtenerValorPorClave(MapServiceImpl.java:18)
+	at com.docencia.colecciones.MapServiceTest.obtenerValorPorClaveClaveInexistenteDevuelveCero(MapServiceTest.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.colecciones.MapServiceTest.calcularMediaPorCategoriaDatosValidosDevuelveMedias -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'calcularMediaPorCategoria'
+	at com.docencia.colecciones.MapServiceImpl.calcularMediaPorCategoria(MapServiceImpl.java:24)
+	at com.docencia.colecciones.MapServiceTest.calcularMediaPorCategoriaDatosValidosDevuelveMedias(MapServiceTest.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.colecciones.MapServiceTest.obtenerClaveConMayorValorDatosValidosDevuelveClave -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'obtenerClaveConMayorValor'
+	at com.docencia.colecciones.MapServiceImpl.obtenerClaveConMayorValor(MapServiceImpl.java:30)
+	at com.docencia.colecciones.MapServiceTest.obtenerClaveConMayorValorDatosValidosDevuelveClave(MapServiceTest.java:34)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.colecciones.MapServiceTest.obtenerClaveConMayorValorMapaVacioLanzaExcepcion -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.colecciones.MapServiceTest.obtenerClaveConMayorValorMapaVacioLanzaExcepcion(MapServiceTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'obtenerClaveConMayorValor'
+	at com.docencia.colecciones.MapServiceImpl.obtenerClaveConMayorValor(MapServiceImpl.java:30)
+	at com.docencia.colecciones.MapServiceTest.lambda$obtenerClaveConMayorValorMapaVacioLanzaExcepcion$0(MapServiceTest.java:39)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.colecciones.MapServiceTest.filtrarPorValorMinimoDatosValidosDevuelveMapaFiltrado -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'filtrarPorValorMinimo'
+	at com.docencia.colecciones.MapServiceImpl.filtrarPorValorMinimo(MapServiceImpl.java:36)
+	at com.docencia.colecciones.MapServiceTest.filtrarPorValorMinimoDatosValidosDevuelveMapaFiltrado(MapServiceTest.java:44)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

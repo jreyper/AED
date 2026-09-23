@@ -1,0 +1,84 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.LocalDateServiceTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 6, Skipped: 0, Time elapsed: 0.088 s <<< FAILURE! -- in com.docencia.fechas.LocalDateServiceTest
+com.docencia.fechas.LocalDateServiceTest.calcularEdadFechaValidaDevuelveEdad -- Time elapsed: 0.033 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'calcularEdad'
+	at com.docencia.fechas.LocalDateServiceImpl.calcularEdad(LocalDateServiceImpl.java:12)
+	at com.docencia.fechas.LocalDateServiceTest.calcularEdadFechaValidaDevuelveEdad(LocalDateServiceTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.fechas.LocalDateServiceTest.calcularEdadFechaFuturaLanzaExcepcion -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.fechas.LocalDateServiceTest.calcularEdadFechaFuturaLanzaExcepcion(LocalDateServiceTest.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'calcularEdad'
+	at com.docencia.fechas.LocalDateServiceImpl.calcularEdad(LocalDateServiceImpl.java:12)
+	at com.docencia.fechas.LocalDateServiceTest.lambda$calcularEdadFechaFuturaLanzaExcepcion$0(LocalDateServiceTest.java:11)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.fechas.LocalDateServiceTest.esFechaFuturaFechaFuturaDevuelveTrue -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'esFechaFutura'
+	at com.docencia.fechas.LocalDateServiceImpl.esFechaFutura(LocalDateServiceImpl.java:18)
+	at com.docencia.fechas.LocalDateServiceTest.esFechaFuturaFechaFuturaDevuelveTrue(LocalDateServiceTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.fechas.LocalDateServiceTest.esFechaFuturaFechaPasadaDevuelveFalse -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'esFechaFutura'
+	at com.docencia.fechas.LocalDateServiceImpl.esFechaFutura(LocalDateServiceImpl.java:18)
+	at com.docencia.fechas.LocalDateServiceTest.esFechaFuturaFechaPasadaDevuelveFalse(LocalDateServiceTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.fechas.LocalDateServiceTest.calcularDiasEntreFechasDatosValidosDevuelveDias -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'calcularDiasEntreFechas'
+	at com.docencia.fechas.LocalDateServiceImpl.calcularDiasEntreFechas(LocalDateServiceImpl.java:24)
+	at com.docencia.fechas.LocalDateServiceTest.calcularDiasEntreFechasDatosValidosDevuelveDias(LocalDateServiceTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.fechas.LocalDateServiceTest.calcularDiasEntreFechasFinAnteriorLanzaExcepcion -- Time elapsed: 0.017 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.fechas.LocalDateServiceTest.calcularDiasEntreFechasFinAnteriorLanzaExcepcion(LocalDateServiceTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'calcularDiasEntreFechas'
+	at com.docencia.fechas.LocalDateServiceImpl.calcularDiasEntreFechas(LocalDateServiceImpl.java:24)
+	at com.docencia.fechas.LocalDateServiceTest.lambda$calcularDiasEntreFechasFinAnteriorLanzaExcepcion$0(LocalDateServiceTest.java:15)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.fechas.LocalDateServiceTest.sumarDiasDiasNegativosRestaDias -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'sumarDias'
+	at com.docencia.fechas.LocalDateServiceImpl.sumarDias(LocalDateServiceImpl.java:30)
+	at com.docencia.fechas.LocalDateServiceTest.sumarDiasDiasNegativosRestaDias(LocalDateServiceTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.fechas.LocalDateServiceTest.esMayorDeEdadMenorDevuelveFalse -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'esMayorDeEdad'
+	at com.docencia.fechas.LocalDateServiceImpl.esMayorDeEdad(LocalDateServiceImpl.java:36)
+	at com.docencia.fechas.LocalDateServiceTest.esMayorDeEdadMenorDevuelveFalse(LocalDateServiceTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

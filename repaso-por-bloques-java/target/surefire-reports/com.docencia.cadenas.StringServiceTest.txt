@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.cadenas.StringServiceTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 7, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! -- in com.docencia.cadenas.StringServiceTest
+com.docencia.cadenas.StringServiceTest.normalizarTextoConEspaciosDevuelveTextoLimpio -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'normalizarTexto'
+	at com.docencia.cadenas.StringServiceImpl.normalizarTexto(StringServiceImpl.java:8)
+	at com.docencia.cadenas.StringServiceTest.normalizarTextoConEspaciosDevuelveTextoLimpio(StringServiceTest.java:9)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.cadenas.StringServiceTest.normalizarTextoTextoNullLanzaExcepcion -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.cadenas.StringServiceTest.normalizarTextoTextoNullLanzaExcepcion(StringServiceTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'normalizarTexto'
+	at com.docencia.cadenas.StringServiceImpl.normalizarTexto(StringServiceImpl.java:8)
+	at com.docencia.cadenas.StringServiceTest.lambda$normalizarTextoTextoNullLanzaExcepcion$0(StringServiceTest.java:10)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.cadenas.StringServiceTest.esPalindromoTextoPalindromoDevuelveTrue -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'esPalindromo'
+	at com.docencia.cadenas.StringServiceImpl.esPalindromo(StringServiceImpl.java:14)
+	at com.docencia.cadenas.StringServiceTest.esPalindromoTextoPalindromoDevuelveTrue(StringServiceTest.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.cadenas.StringServiceTest.esPalindromoIgnorandoEspaciosDevuelveTrue -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'esPalindromo'
+	at com.docencia.cadenas.StringServiceImpl.esPalindromo(StringServiceImpl.java:14)
+	at com.docencia.cadenas.StringServiceTest.esPalindromoIgnorandoEspaciosDevuelveTrue(StringServiceTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.cadenas.StringServiceTest.contarVocalesTextoValidoDevuelveCantidad -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'contarVocales'
+	at com.docencia.cadenas.StringServiceImpl.contarVocales(StringServiceImpl.java:20)
+	at com.docencia.cadenas.StringServiceTest.contarVocalesTextoValidoDevuelveCantidad(StringServiceTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.cadenas.StringServiceTest.extraerInicialesNombreCompletoDevuelveIniciales -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'extraerIniciales'
+	at com.docencia.cadenas.StringServiceImpl.extraerIniciales(StringServiceImpl.java:26)
+	at com.docencia.cadenas.StringServiceTest.extraerInicialesNombreCompletoDevuelveIniciales(StringServiceTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.cadenas.StringServiceTest.invertirTextoDatosValidosDevuelveTextoInvertido -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'invertirTexto'
+	at com.docencia.cadenas.StringServiceImpl.invertirTexto(StringServiceImpl.java:32)
+	at com.docencia.cadenas.StringServiceTest.invertirTextoDatosValidosDevuelveTextoInvertido(StringServiceTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.cadenas.StringServiceTest.contieneSoloLetrasConNumerosDevuelveFalse -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'contieneSoloLetras'
+	at com.docencia.cadenas.StringServiceImpl.contieneSoloLetras(StringServiceImpl.java:38)
+	at com.docencia.cadenas.StringServiceTest.contieneSoloLetrasConNumerosDevuelveFalse(StringServiceTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

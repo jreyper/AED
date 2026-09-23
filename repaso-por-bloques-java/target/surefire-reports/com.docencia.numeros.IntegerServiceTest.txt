@@ -1,0 +1,108 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.numeros.IntegerServiceTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 3, Errors: 7, Skipped: 0, Time elapsed: 0.043 s <<< FAILURE! -- in com.docencia.numeros.IntegerServiceTest
+com.docencia.numeros.IntegerServiceTest.esParNumeroParDevuelveTrue -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'esPar'
+	at com.docencia.numeros.IntegerServiceImpl.esPar(IntegerServiceImpl.java:8)
+	at com.docencia.numeros.IntegerServiceTest.esParNumeroParDevuelveTrue(IntegerServiceTest.java:9)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.numeros.IntegerServiceTest.esParNumeroImparDevuelveFalse -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'esPar'
+	at com.docencia.numeros.IntegerServiceImpl.esPar(IntegerServiceImpl.java:8)
+	at com.docencia.numeros.IntegerServiceTest.esParNumeroImparDevuelveFalse(IntegerServiceTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.numeros.IntegerServiceTest.esParNumeroNullLanzaExcepcion -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.numeros.IntegerServiceTest.esParNumeroNullLanzaExcepcion(IntegerServiceTest.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'esPar'
+	at com.docencia.numeros.IntegerServiceImpl.esPar(IntegerServiceImpl.java:8)
+	at com.docencia.numeros.IntegerServiceTest.lambda$esParNumeroNullLanzaExcepcion$0(IntegerServiceTest.java:11)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.numeros.IntegerServiceTest.sumarDigitosNumeroNegativoDevuelveSuma -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'sumarDigitos'
+	at com.docencia.numeros.IntegerServiceImpl.sumarDigitos(IntegerServiceImpl.java:14)
+	at com.docencia.numeros.IntegerServiceTest.sumarDigitosNumeroNegativoDevuelveSuma(IntegerServiceTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.numeros.IntegerServiceTest.convertirTextoAEnteroTextoValidoDevuelveEntero -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'convertirTextoAEntero'
+	at com.docencia.numeros.IntegerServiceImpl.convertirTextoAEntero(IntegerServiceImpl.java:20)
+	at com.docencia.numeros.IntegerServiceTest.convertirTextoAEnteroTextoValidoDevuelveEntero(IntegerServiceTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.numeros.IntegerServiceTest.convertirTextoAEnteroTextoInvalidoLanzaExcepcion -- Time elapsed: 0.006 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.numeros.IntegerServiceTest.convertirTextoAEnteroTextoInvalidoLanzaExcepcion(IntegerServiceTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'convertirTextoAEntero'
+	at com.docencia.numeros.IntegerServiceImpl.convertirTextoAEntero(IntegerServiceImpl.java:20)
+	at com.docencia.numeros.IntegerServiceTest.lambda$convertirTextoAEnteroTextoInvalidoLanzaExcepcion$0(IntegerServiceTest.java:14)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.numeros.IntegerServiceTest.esNumeroPrimoNumeroPrimoDevuelveTrue -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'esNumeroPrimo'
+	at com.docencia.numeros.IntegerServiceImpl.esNumeroPrimo(IntegerServiceImpl.java:26)
+	at com.docencia.numeros.IntegerServiceTest.esNumeroPrimoNumeroPrimoDevuelveTrue(IntegerServiceTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.numeros.IntegerServiceTest.esNumeroPrimoNumeroNoPrimoDevuelveFalse -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'esNumeroPrimo'
+	at com.docencia.numeros.IntegerServiceImpl.esNumeroPrimo(IntegerServiceImpl.java:26)
+	at com.docencia.numeros.IntegerServiceTest.esNumeroPrimoNumeroNoPrimoDevuelveFalse(IntegerServiceTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.numeros.IntegerServiceTest.calcularFactorialCeroDevuelveUno -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'calcularFactorial'
+	at com.docencia.numeros.IntegerServiceImpl.calcularFactorial(IntegerServiceImpl.java:32)
+	at com.docencia.numeros.IntegerServiceTest.calcularFactorialCeroDevuelveUno(IntegerServiceTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.numeros.IntegerServiceTest.calcularFactorialNumeroNegativoLanzaExcepcion -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.numeros.IntegerServiceTest.calcularFactorialNumeroNegativoLanzaExcepcion(IntegerServiceTest.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'calcularFactorial'
+	at com.docencia.numeros.IntegerServiceImpl.calcularFactorial(IntegerServiceImpl.java:32)
+	at com.docencia.numeros.IntegerServiceTest.lambda$calcularFactorialNumeroNegativoLanzaExcepcion$0(IntegerServiceTest.java:18)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+

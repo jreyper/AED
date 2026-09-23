@@ -1,0 +1,68 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.numeros.MathServiceTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 6, Skipped: 0, Time elapsed: 0.033 s <<< FAILURE! -- in com.docencia.numeros.MathServiceTest
+com.docencia.numeros.MathServiceTest.calcularAreaCirculoRadioValidoDevuelveArea -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'calcularAreaCirculo'
+	at com.docencia.numeros.MathServiceImpl.calcularAreaCirculo(MathServiceImpl.java:8)
+	at com.docencia.numeros.MathServiceTest.calcularAreaCirculoRadioValidoDevuelveArea(MathServiceTest.java:9)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.numeros.MathServiceTest.calcularAreaCirculoRadioNegativoLanzaExcepcion -- Time elapsed: 0.009 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.numeros.MathServiceTest.calcularAreaCirculoRadioNegativoLanzaExcepcion(MathServiceTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'calcularAreaCirculo'
+	at com.docencia.numeros.MathServiceImpl.calcularAreaCirculo(MathServiceImpl.java:8)
+	at com.docencia.numeros.MathServiceTest.lambda$calcularAreaCirculoRadioNegativoLanzaExcepcion$0(MathServiceTest.java:10)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.numeros.MathServiceTest.calcularPotenciaDatosValidosDevuelveResultado -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'calcularPotencia'
+	at com.docencia.numeros.MathServiceImpl.calcularPotencia(MathServiceImpl.java:14)
+	at com.docencia.numeros.MathServiceTest.calcularPotenciaDatosValidosDevuelveResultado(MathServiceTest.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.numeros.MathServiceTest.calcularPotenciaExponenteCeroDevuelveUno -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'calcularPotencia'
+	at com.docencia.numeros.MathServiceImpl.calcularPotencia(MathServiceImpl.java:14)
+	at com.docencia.numeros.MathServiceTest.calcularPotenciaExponenteCeroDevuelveUno(MathServiceTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.numeros.MathServiceTest.redondearHaciaArribaDecimalDevuelveEnteroSuperior -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'redondearHaciaArriba'
+	at com.docencia.numeros.MathServiceImpl.redondearHaciaArriba(MathServiceImpl.java:20)
+	at com.docencia.numeros.MathServiceTest.redondearHaciaArribaDecimalDevuelveEnteroSuperior(MathServiceTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.numeros.MathServiceTest.calcularRaizCuadradaNumeroValidoDevuelveRaiz -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'calcularRaizCuadrada'
+	at com.docencia.numeros.MathServiceImpl.calcularRaizCuadrada(MathServiceImpl.java:26)
+	at com.docencia.numeros.MathServiceTest.calcularRaizCuadradaNumeroValidoDevuelveRaiz(MathServiceTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.numeros.MathServiceTest.obtenerValorAbsolutoNumeroNegativoDevuelvePositivo -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'obtenerValorAbsoluto'
+	at com.docencia.numeros.MathServiceImpl.obtenerValorAbsoluto(MathServiceImpl.java:32)
+	at com.docencia.numeros.MathServiceTest.obtenerValorAbsolutoNumeroNegativoDevuelvePositivo(MathServiceTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

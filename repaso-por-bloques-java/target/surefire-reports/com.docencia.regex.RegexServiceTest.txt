@@ -1,0 +1,92 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.regex.RegexServiceTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0.131 s <<< FAILURE! -- in com.docencia.regex.RegexServiceTest
+com.docencia.regex.RegexServiceTest.validarDniFormatoValidoDevuelveTrue -- Time elapsed: 0.052 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'validarDni'
+	at com.docencia.regex.RegexServiceImpl.validarDni(RegexServiceImpl.java:8)
+	at com.docencia.regex.RegexServiceTest.validarDniFormatoValidoDevuelveTrue(RegexServiceTest.java:9)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.regex.RegexServiceTest.validarDniFormatoInvalidoDevuelveFalse -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'validarDni'
+	at com.docencia.regex.RegexServiceImpl.validarDni(RegexServiceImpl.java:8)
+	at com.docencia.regex.RegexServiceTest.validarDniFormatoInvalidoDevuelveFalse(RegexServiceTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.regex.RegexServiceTest.validarDniTextoNullDevuelveFalse -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'validarDni'
+	at com.docencia.regex.RegexServiceImpl.validarDni(RegexServiceImpl.java:8)
+	at com.docencia.regex.RegexServiceTest.validarDniTextoNullDevuelveFalse(RegexServiceTest.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.regex.RegexServiceTest.validarEmailFormatoValidoDevuelveTrue -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'validarEmail'
+	at com.docencia.regex.RegexServiceImpl.validarEmail(RegexServiceImpl.java:14)
+	at com.docencia.regex.RegexServiceTest.validarEmailFormatoValidoDevuelveTrue(RegexServiceTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.regex.RegexServiceTest.validarEmailFormatoInvalidoDevuelveFalse -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'validarEmail'
+	at com.docencia.regex.RegexServiceImpl.validarEmail(RegexServiceImpl.java:14)
+	at com.docencia.regex.RegexServiceTest.validarEmailFormatoInvalidoDevuelveFalse(RegexServiceTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.regex.RegexServiceTest.validarTelefonoFormatoValidoDevuelveTrue -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'validarTelefono'
+	at com.docencia.regex.RegexServiceImpl.validarTelefono(RegexServiceImpl.java:20)
+	at com.docencia.regex.RegexServiceTest.validarTelefonoFormatoValidoDevuelveTrue(RegexServiceTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.regex.RegexServiceTest.validarTelefonoFormatoInvalidoDevuelveFalse -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'validarTelefono'
+	at com.docencia.regex.RegexServiceImpl.validarTelefono(RegexServiceImpl.java:20)
+	at com.docencia.regex.RegexServiceTest.validarTelefonoFormatoInvalidoDevuelveFalse(RegexServiceTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.regex.RegexServiceTest.validarNombreFormatoValidoDevuelveTrue -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'validarNombre'
+	at com.docencia.regex.RegexServiceImpl.validarNombre(RegexServiceImpl.java:26)
+	at com.docencia.regex.RegexServiceTest.validarNombreFormatoValidoDevuelveTrue(RegexServiceTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.regex.RegexServiceTest.validarNombreMuyCortoDevuelveFalse -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'validarNombre'
+	at com.docencia.regex.RegexServiceImpl.validarNombre(RegexServiceImpl.java:26)
+	at com.docencia.regex.RegexServiceTest.validarNombreMuyCortoDevuelveFalse(RegexServiceTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.regex.RegexServiceTest.validarCodigoPostalFormatoValidoDevuelveTrue -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'validarCodigoPostal'
+	at com.docencia.regex.RegexServiceImpl.validarCodigoPostal(RegexServiceImpl.java:32)
+	at com.docencia.regex.RegexServiceTest.validarCodigoPostalFormatoValidoDevuelveTrue(RegexServiceTest.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.regex.RegexServiceTest.validarMatriculaFormatoValidoDevuelveTrue -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'validarMatricula'
+	at com.docencia.regex.RegexServiceImpl.validarMatricula(RegexServiceImpl.java:38)
+	at com.docencia.regex.RegexServiceTest.validarMatriculaFormatoValidoDevuelveTrue(RegexServiceTest.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

@@ -1,0 +1,68 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.condicionales.SwitchServiceTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 6, Skipped: 0, Time elapsed: 0.046 s <<< FAILURE! -- in com.docencia.condicionales.SwitchServiceTest
+com.docencia.condicionales.SwitchServiceTest.obtenerNombreDiaNumeroValidoDevuelveDia -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'obtenerNombreDia'
+	at com.docencia.condicionales.SwitchServiceImpl.obtenerNombreDia(SwitchServiceImpl.java:8)
+	at com.docencia.condicionales.SwitchServiceTest.obtenerNombreDiaNumeroValidoDevuelveDia(SwitchServiceTest.java:9)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.condicionales.SwitchServiceTest.obtenerNombreDiaNumeroInvalidoLanzaExcepcion -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.condicionales.SwitchServiceTest.obtenerNombreDiaNumeroInvalidoLanzaExcepcion(SwitchServiceTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'obtenerNombreDia'
+	at com.docencia.condicionales.SwitchServiceImpl.obtenerNombreDia(SwitchServiceImpl.java:8)
+	at com.docencia.condicionales.SwitchServiceTest.lambda$obtenerNombreDiaNumeroInvalidoLanzaExcepcion$0(SwitchServiceTest.java:10)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.condicionales.SwitchServiceTest.calcularDescuentoPorTipoVipDevuelveDescuento -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'calcularDescuentoPorTipo'
+	at com.docencia.condicionales.SwitchServiceImpl.calcularDescuentoPorTipo(SwitchServiceImpl.java:14)
+	at com.docencia.condicionales.SwitchServiceTest.calcularDescuentoPorTipoVipDevuelveDescuento(SwitchServiceTest.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.condicionales.SwitchServiceTest.calcularDescuentoPorTipoNormalDevuelveSinDescuento -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'calcularDescuentoPorTipo'
+	at com.docencia.condicionales.SwitchServiceImpl.calcularDescuentoPorTipo(SwitchServiceImpl.java:14)
+	at com.docencia.condicionales.SwitchServiceTest.calcularDescuentoPorTipoNormalDevuelveSinDescuento(SwitchServiceTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.condicionales.SwitchServiceTest.obtenerMensajeEstadoActivoDevuelveMensaje -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'obtenerMensajeEstado'
+	at com.docencia.condicionales.SwitchServiceImpl.obtenerMensajeEstado(SwitchServiceImpl.java:20)
+	at com.docencia.condicionales.SwitchServiceTest.obtenerMensajeEstadoActivoDevuelveMensaje(SwitchServiceTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.condicionales.SwitchServiceTest.obtenerDiasDelMesFebreroDevuelveVeintiocho -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'obtenerDiasDelMes'
+	at com.docencia.condicionales.SwitchServiceImpl.obtenerDiasDelMes(SwitchServiceImpl.java:26)
+	at com.docencia.condicionales.SwitchServiceTest.obtenerDiasDelMesFebreroDevuelveVeintiocho(SwitchServiceTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.docencia.condicionales.SwitchServiceTest.obtenerCategoriaProductoCodigoValidoDevuelveCategoria -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'obtenerCategoriaProducto'
+	at com.docencia.condicionales.SwitchServiceImpl.obtenerCategoriaProducto(SwitchServiceImpl.java:32)
+	at com.docencia.condicionales.SwitchServiceTest.obtenerCategoriaProductoCodigoValidoDevuelveCategoria(SwitchServiceTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
