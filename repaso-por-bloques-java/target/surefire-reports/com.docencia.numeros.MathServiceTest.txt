@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.numeros.MathServiceTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 6, Skipped: 0, Time elapsed: 0.033 s <<< FAILURE! -- in com.docencia.numeros.MathServiceTest
+Tests run: 7, Failures: 1, Errors: 6, Skipped: 0, Time elapsed: 0.054 s <<< FAILURE! -- in com.docencia.numeros.MathServiceTest
 com.docencia.numeros.MathServiceTest.calcularAreaCirculoRadioValidoDevuelveArea -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'calcularAreaCirculo'
 	at com.docencia.numeros.MathServiceImpl.calcularAreaCirculo(MathServiceImpl.java:8)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'calcularAreaCircu
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.numeros.MathServiceTest.calcularAreaCirculoRadioNegativoLanzaExcepcion -- Time elapsed: 0.009 s <<< FAILURE!
+com.docencia.numeros.MathServiceTest.calcularAreaCirculoRadioNegativoLanzaExcepcion -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -26,7 +26,7 @@ Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'calcul
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.numeros.MathServiceTest.calcularPotenciaDatosValidosDevuelveResultado -- Time elapsed: 0.003 s <<< ERROR!
+com.docencia.numeros.MathServiceTest.calcularPotenciaDatosValidosDevuelveResultado -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'calcularPotencia'
 	at com.docencia.numeros.MathServiceImpl.calcularPotencia(MathServiceImpl.java:14)
 	at com.docencia.numeros.MathServiceTest.calcularPotenciaDatosValidosDevuelveResultado(MathServiceTest.java:11)

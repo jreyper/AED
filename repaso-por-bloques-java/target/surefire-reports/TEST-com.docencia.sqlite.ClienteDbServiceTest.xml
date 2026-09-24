@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.docencia.sqlite.ClienteDbServiceTest" time="0.234" tests="8" errors="8" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.docencia.sqlite.ClienteDbServiceTest" time="1.184" tests="8" errors="8" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="27"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/alumno/Descargas/repaso-por-bloques-java/target/test-classes:/home/alumno/Descargas/repaso-por-bloques-java/target/classes:/home/alumno/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/alumno/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/alumno/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/alumno/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/alumno/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/alumno/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/alumno/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/alumno/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/alumno/.m2/repository/org/xerial/sqlite-jdbc/3.45.3.0/sqlite-jdbc-3.45.3.0.jar:/home/alumno/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.class.path" value="/mnt/c/Users/javie/AED/repaso-por-bloques-java/target/test-classes:/mnt/c/Users/javie/AED/repaso-por-bloques-java/target/classes:/home/javie/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/javie/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/javie/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/javie/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/javie/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/javie/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/javie/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/javie/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/javie/.m2/repository/org/xerial/sqlite-jdbc/3.45.3.0/sqlite-jdbc-3.45.3.0.jar:/home/javie/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
     <property name="user.timezone" value="Atlantic/Canary"/>
     <property name="os.name" value="Linux"/>
     <property name="java.vm.specification.version" value="27"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="ES"/>
-    <property name="sun.boot.library.path" value="/home/alumno/.jdks/openjdk-27/lib"/>
-    <property name="sun.java.command" value="/home/alumno/Descargas/repaso-por-bloques-java/target/surefire/surefirebooter-20260921181405749_3.jar /home/alumno/Descargas/repaso-por-bloques-java/target/surefire 2026-09-21T18-14-05_612-jvmRun1 surefire-20260921181405749_1tmp surefire_0-20260921181405749_2tmp"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/temurin-27-jdk-amd64/lib"/>
+    <property name="sun.java.command" value="/mnt/c/Users/javie/AED/repaso-por-bloques-java/target/surefire/surefirebooter-20260923234341104_3.jar /mnt/c/Users/javie/AED/repaso-por-bloques-java/target/surefire 2026-09-23T23-43-40_370-jvmRun1 surefire-20260923234341104_1tmp surefire_0-20260923234341104_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/alumno/Descargas/repaso-por-bloques-java/target/test-classes:/home/alumno/Descargas/repaso-por-bloques-java/target/classes:/home/alumno/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/alumno/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/alumno/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/alumno/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/alumno/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/alumno/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/alumno/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/alumno/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/alumno/.m2/repository/org/xerial/sqlite-jdbc/3.45.3.0/sqlite-jdbc-3.45.3.0.jar:/home/alumno/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:"/>
+    <property name="surefire.test.class.path" value="/mnt/c/Users/javie/AED/repaso-por-bloques-java/target/test-classes:/mnt/c/Users/javie/AED/repaso-por-bloques-java/target/classes:/home/javie/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/javie/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/javie/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/javie/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/javie/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/javie/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/javie/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/javie/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/javie/.m2/repository/org/xerial/sqlite-jdbc/3.45.3.0/sqlite-jdbc-3.45.3.0.jar:/home/javie/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/alumno"/>
-    <property name="user.language" value="es"/>
+    <property name="user.home" value="/home/javie"/>
+    <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2026-09-15"/>
-    <property name="java.home" value="/home/alumno/.jdks/openjdk-27"/>
+    <property name="java.home" value="/usr/lib/jvm/temurin-27-jdk-amd64"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/alumno/Descargas/repaso-por-bloques-java"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="basedir" value="/mnt/c/Users/javie/AED/repaso-por-bloques-java"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/alumno/Descargas/repaso-por-bloques-java/target/surefire/surefirebooter-20260921181405749_3.jar"/>
+    <property name="surefire.real.class.path" value="/mnt/c/Users/javie/AED/repaso-por-bloques-java/target/surefire/surefirebooter-20260923234341104_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="27+35-2325"/>
-    <property name="user.name" value="alumno"/>
+    <property name="java.runtime.version" value="27+35"/>
+    <property name="user.name" value="javie"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="6.12.107+deb13-amd64"/>
+    <property name="os.version" value="6.6.87.2-microsoft-standard-WSL2"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="localRepository" value="/home/alumno/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.vendor.version" value="Temurin-27+35"/>
+    <property name="localRepository" value="/home/javie/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="java.version" value="27"/>
-    <property name="user.dir" value="/home/alumno/Descargas/repaso-por-bloques-java"/>
+    <property name="user.dir" value="/mnt/c/Users/javie/AED/repaso-por-bloques-java"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="UTF-8"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="27+35-2325"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="27+35"/>
     <property name="stdin.encoding" value="UTF-8"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="71.0"/>
   </properties>
-  <testcase name="findAllSinDatosDevuelveListaVacia" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.198">
+  <testcase name="findAllSinDatosDevuelveListaVacia" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.973">
     <error message="Unimplemented method &apos;findAll&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'findAll'
 	at com.docencia.sqlite.ClienteDbServiceImpl.findAll(ClienteDbServiceImpl.java:27)
 	at com.docencia.sqlite.ClienteDbServiceTest.findAllSinDatosDevuelveListaVacia(ClienteDbServiceTest.java:17)
@@ -68,7 +68,7 @@ SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="findByDniInexistenteDevuelveNull" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.01">
+  <testcase name="findByDniInexistenteDevuelveNull" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.024">
     <error message="Unimplemented method &apos;findByDni&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'findByDni'
 	at com.docencia.sqlite.ClienteDbServiceImpl.findByDni(ClienteDbServiceImpl.java:21)
 	at com.docencia.sqlite.ClienteDbServiceTest.findByDniInexistenteDevuelveNull(ClienteDbServiceTest.java:18)
@@ -77,7 +77,7 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 ]]></error>
   </testcase>
-  <testcase name="createClienteValidoDevuelveTrue" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.002">
+  <testcase name="createClienteValidoDevuelveTrue" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.054">
     <error message="Unimplemented method &apos;create&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.docencia.sqlite.ClienteDbServiceImpl.create(ClienteDbServiceImpl.java:15)
 	at com.docencia.sqlite.ClienteDbServiceTest.createClienteValidoDevuelveTrue(ClienteDbServiceTest.java:19)
@@ -86,7 +86,7 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 ]]></error>
   </testcase>
-  <testcase name="createClienteDuplicadoDevuelveFalse" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.003">
+  <testcase name="createClienteDuplicadoDevuelveFalse" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.027">
     <error message="Unimplemented method &apos;create&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.docencia.sqlite.ClienteDbServiceImpl.create(ClienteDbServiceImpl.java:15)
 	at com.docencia.sqlite.ClienteDbServiceTest.createClienteDuplicadoDevuelveFalse(ClienteDbServiceTest.java:22)
@@ -95,7 +95,7 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 ]]></error>
   </testcase>
-  <testcase name="findByDniExistenteDevuelveCliente" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.002">
+  <testcase name="findByDniExistenteDevuelveCliente" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.021">
     <error message="Unimplemented method &apos;create&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.docencia.sqlite.ClienteDbServiceImpl.create(ClienteDbServiceImpl.java:15)
 	at com.docencia.sqlite.ClienteDbServiceTest.findByDniExistenteDevuelveCliente(ClienteDbServiceTest.java:26)
@@ -104,7 +104,7 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 ]]></error>
   </testcase>
-  <testcase name="updateClienteExistenteDevuelveTrue" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.002">
+  <testcase name="updateClienteExistenteDevuelveTrue" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.022">
     <error message="Unimplemented method &apos;create&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.docencia.sqlite.ClienteDbServiceImpl.create(ClienteDbServiceImpl.java:15)
 	at com.docencia.sqlite.ClienteDbServiceTest.updateClienteExistenteDevuelveTrue(ClienteDbServiceTest.java:30)
@@ -113,7 +113,7 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 ]]></error>
   </testcase>
-  <testcase name="deleteByDniExistenteDevuelveTrue" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.003">
+  <testcase name="deleteByDniExistenteDevuelveTrue" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.024">
     <error message="Unimplemented method &apos;create&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.docencia.sqlite.ClienteDbServiceImpl.create(ClienteDbServiceImpl.java:15)
 	at com.docencia.sqlite.ClienteDbServiceTest.deleteByDniExistenteDevuelveTrue(ClienteDbServiceTest.java:34)
@@ -122,7 +122,7 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 ]]></error>
   </testcase>
-  <testcase name="findByCiudadExistenteDevuelveClientes" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.003">
+  <testcase name="findByCiudadExistenteDevuelveClientes" classname="com.docencia.sqlite.ClienteDbServiceTest" time="0.023">
     <error message="Unimplemented method &apos;create&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.docencia.sqlite.ClienteDbServiceImpl.create(ClienteDbServiceImpl.java:15)
 	at com.docencia.sqlite.ClienteDbServiceTest.findByCiudadExistenteDevuelveClientes(ClienteDbServiceTest.java:38)

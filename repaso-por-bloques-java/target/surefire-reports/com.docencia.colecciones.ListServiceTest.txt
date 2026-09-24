@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.colecciones.ListServiceTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 2, Errors: 6, Skipped: 0, Time elapsed: 0.020 s <<< FAILURE! -- in com.docencia.colecciones.ListServiceTest
-com.docencia.colecciones.ListServiceTest.filtrarPalabrasPorLongitudDatosValidosDevuelveListaFiltrada -- Time elapsed: 0.001 s <<< ERROR!
+Tests run: 8, Failures: 2, Errors: 6, Skipped: 0, Time elapsed: 0.077 s <<< FAILURE! -- in com.docencia.colecciones.ListServiceTest
+com.docencia.colecciones.ListServiceTest.filtrarPalabrasPorLongitudDatosValidosDevuelveListaFiltrada -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'filtrarPalabrasPorLongitud'
 	at com.docencia.colecciones.ListServiceImpl.filtrarPalabrasPorLongitud(ListServiceImpl.java:12)
 	at com.docencia.colecciones.ListServiceTest.filtrarPalabrasPorLongitudDatosValidosDevuelveListaFiltrada(ListServiceTest.java:13)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'filtrarPalabrasPo
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.colecciones.ListServiceTest.filtrarPalabrasPorLongitudListaVaciaDevuelveListaVacia -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.colecciones.ListServiceTest.filtrarPalabrasPorLongitudListaVaciaDevuelveListaVacia -- Time elapsed: 0.003 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'filtrarPalabrasPorLongitud'
 	at com.docencia.colecciones.ListServiceImpl.filtrarPalabrasPorLongitud(ListServiceImpl.java:12)
 	at com.docencia.colecciones.ListServiceTest.filtrarPalabrasPorLongitudListaVaciaDevuelveListaVacia(ListServiceTest.java:18)
@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'filtrarPalabrasPo
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.colecciones.ListServiceTest.filtrarPalabrasPorLongitudLongitudInvalidaLanzaExcepcion -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.colecciones.ListServiceTest.filtrarPalabrasPorLongitudLongitudInvalidaLanzaExcepcion -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -34,7 +34,7 @@ Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'filtra
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.colecciones.ListServiceTest.ordenarNumerosAscendenteDatosValidosDevuelveListaOrdenada -- Time elapsed: 0.002 s <<< ERROR!
+com.docencia.colecciones.ListServiceTest.ordenarNumerosAscendenteDatosValidosDevuelveListaOrdenada -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'ordenarNumerosAscendente'
 	at com.docencia.colecciones.ListServiceImpl.ordenarNumerosAscendente(ListServiceImpl.java:18)
 	at com.docencia.colecciones.ListServiceTest.ordenarNumerosAscendenteDatosValidosDevuelveListaOrdenada(ListServiceTest.java:28)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'sumarElementosLis
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.colecciones.ListServiceTest.calcularMediaListaDatosValidosDevuelveMedia -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.colecciones.ListServiceTest.calcularMediaListaDatosValidosDevuelveMedia -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'calcularMediaLista'
 	at com.docencia.colecciones.ListServiceImpl.calcularMediaLista(ListServiceImpl.java:30)
 	at com.docencia.colecciones.ListServiceTest.calcularMediaListaDatosValidosDevuelveMedia(ListServiceTest.java:38)
@@ -58,7 +58,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'calcularMediaList
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.colecciones.ListServiceTest.calcularMediaListaListaVaciaLanzaExcepcion -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.colecciones.ListServiceTest.calcularMediaListaListaVaciaLanzaExcepcion -- Time elapsed: 0.005 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -74,7 +74,7 @@ Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'calcul
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.colecciones.ListServiceTest.eliminarNumerosDuplicadosConDuplicadosDevuelveListaSinDuplicados -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.colecciones.ListServiceTest.eliminarNumerosDuplicadosConDuplicadosDevuelveListaSinDuplicados -- Time elapsed: 0.003 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'eliminarNumerosDuplicados'
 	at com.docencia.colecciones.ListServiceImpl.eliminarNumerosDuplicados(ListServiceImpl.java:36)
 	at com.docencia.colecciones.ListServiceTest.eliminarNumerosDuplicadosConDuplicadosDevuelveListaSinDuplicados(ListServiceTest.java:48)

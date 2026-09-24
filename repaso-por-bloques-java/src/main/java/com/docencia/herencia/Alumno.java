@@ -8,5 +8,6 @@ public class Alumno extends Persona {
         this.expediente = expediente;
     }
 
-    public String getExpediente() { return expediente; }
+    public String getExpediente() {
+        return expediente; }
 }

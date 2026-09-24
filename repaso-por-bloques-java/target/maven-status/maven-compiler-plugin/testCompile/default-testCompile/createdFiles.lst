@@ -1,8 +1,8 @@
 com/docencia/numeros/MathServiceTest.class
 com/docencia/colecciones/ListServiceTest.class
 com/docencia/numeros/IntegerServiceTest.class
-com/docencia/ficheros/CsvServiceTest.class
 com/docencia/colecciones/MapServiceTest.class
+com/docencia/ficheros/CsvServiceTest.class
 com/docencia/regex/RegexServiceTest.class
 com/docencia/condicionales/IfElseServiceTest.class
 com/docencia/colecciones/SetServiceTest.class

@@ -4,38 +4,59 @@ public class RegexServiceImpl implements RegexService {
 
     @Override
     public Boolean validarDni(String dni) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'validarDni'");
+        if (dni == null || dni.isBlank()){
+            return false;
+        }
+        String patron = "[0-8]{8}[A-Z]";
+        return dni.matches(patron);
     }
 
     @Override
     public Boolean validarEmail(String email) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'validarEmail'");
+        if (email == null || email.isBlank()){
+            return false;
+        }
+        String patron = "^[a-z0-9]+@[a-z]+\\.[a-z]+$";
+        return email.matches(patron);
     }
 
     @Override
     public Boolean validarTelefono(String telefono) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'validarTelefono'");
+        if (telefono == null || telefono.isBlank()){
+            return false;
+        }
+        String patron = "^612[0-9]{6}$";
+        return telefono.matches(patron);
     }
 
     @Override
     public Boolean validarNombre(String nombre) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'validarNombre'");
-    }
+        if (nombre == null || nombre.isBlank()) {
+        return false;
+        }
+        String patron = "^[A-Za-záéíóú]+[A-Za-záéíóú\\s]+$";
+        return nombre.matches(patron);
+        }
 
     @Override
     public Boolean validarCodigoPostal(String codigoPostal) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'validarCodigoPostal'");
+        if (codigoPostal == null || codigoPostal.isBlank()){
+            return false;
+        }
+        String patron = "^[0-9]{5}$";
+        return codigoPostal.matches(patron);
     }
 
     @Override
     public Boolean validarMatricula(String matricula) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'validarMatricula'");
+        if (matricula == null || matricula.isBlank()){
+            return false;
+        }
+        String patron = "^[0-9]{4}[A-Z]{3}$";
+        return matricula.matches(patron);
     }
-    
-}
+
+    }
+
+
+

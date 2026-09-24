@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.sqlite.ClienteDbServiceTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.234 s <<< FAILURE! -- in com.docencia.sqlite.ClienteDbServiceTest
-com.docencia.sqlite.ClienteDbServiceTest.findAllSinDatosDevuelveListaVacia -- Time elapsed: 0.198 s <<< ERROR!
+Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 1.184 s <<< FAILURE! -- in com.docencia.sqlite.ClienteDbServiceTest
+com.docencia.sqlite.ClienteDbServiceTest.findAllSinDatosDevuelveListaVacia -- Time elapsed: 0.973 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'findAll'
 	at com.docencia.sqlite.ClienteDbServiceImpl.findAll(ClienteDbServiceImpl.java:27)
 	at com.docencia.sqlite.ClienteDbServiceTest.findAllSinDatosDevuelveListaVacia(ClienteDbServiceTest.java:17)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'findAll'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.sqlite.ClienteDbServiceTest.findByDniInexistenteDevuelveNull -- Time elapsed: 0.010 s <<< ERROR!
+com.docencia.sqlite.ClienteDbServiceTest.findByDniInexistenteDevuelveNull -- Time elapsed: 0.024 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'findByDni'
 	at com.docencia.sqlite.ClienteDbServiceImpl.findByDni(ClienteDbServiceImpl.java:21)
 	at com.docencia.sqlite.ClienteDbServiceTest.findByDniInexistenteDevuelveNull(ClienteDbServiceTest.java:18)
@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'findByDni'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.sqlite.ClienteDbServiceTest.createClienteValidoDevuelveTrue -- Time elapsed: 0.002 s <<< ERROR!
+com.docencia.sqlite.ClienteDbServiceTest.createClienteValidoDevuelveTrue -- Time elapsed: 0.054 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.docencia.sqlite.ClienteDbServiceImpl.create(ClienteDbServiceImpl.java:15)
 	at com.docencia.sqlite.ClienteDbServiceTest.createClienteValidoDevuelveTrue(ClienteDbServiceTest.java:19)
@@ -26,7 +26,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.sqlite.ClienteDbServiceTest.createClienteDuplicadoDevuelveFalse -- Time elapsed: 0.003 s <<< ERROR!
+com.docencia.sqlite.ClienteDbServiceTest.createClienteDuplicadoDevuelveFalse -- Time elapsed: 0.027 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.docencia.sqlite.ClienteDbServiceImpl.create(ClienteDbServiceImpl.java:15)
 	at com.docencia.sqlite.ClienteDbServiceTest.createClienteDuplicadoDevuelveFalse(ClienteDbServiceTest.java:22)
@@ -34,7 +34,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.sqlite.ClienteDbServiceTest.findByDniExistenteDevuelveCliente -- Time elapsed: 0.002 s <<< ERROR!
+com.docencia.sqlite.ClienteDbServiceTest.findByDniExistenteDevuelveCliente -- Time elapsed: 0.021 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.docencia.sqlite.ClienteDbServiceImpl.create(ClienteDbServiceImpl.java:15)
 	at com.docencia.sqlite.ClienteDbServiceTest.findByDniExistenteDevuelveCliente(ClienteDbServiceTest.java:26)
@@ -42,7 +42,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.sqlite.ClienteDbServiceTest.updateClienteExistenteDevuelveTrue -- Time elapsed: 0.002 s <<< ERROR!
+com.docencia.sqlite.ClienteDbServiceTest.updateClienteExistenteDevuelveTrue -- Time elapsed: 0.022 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.docencia.sqlite.ClienteDbServiceImpl.create(ClienteDbServiceImpl.java:15)
 	at com.docencia.sqlite.ClienteDbServiceTest.updateClienteExistenteDevuelveTrue(ClienteDbServiceTest.java:30)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.sqlite.ClienteDbServiceTest.deleteByDniExistenteDevuelveTrue -- Time elapsed: 0.003 s <<< ERROR!
+com.docencia.sqlite.ClienteDbServiceTest.deleteByDniExistenteDevuelveTrue -- Time elapsed: 0.024 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.docencia.sqlite.ClienteDbServiceImpl.create(ClienteDbServiceImpl.java:15)
 	at com.docencia.sqlite.ClienteDbServiceTest.deleteByDniExistenteDevuelveTrue(ClienteDbServiceTest.java:34)
@@ -58,7 +58,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.sqlite.ClienteDbServiceTest.findByCiudadExistenteDevuelveClientes -- Time elapsed: 0.003 s <<< ERROR!
+com.docencia.sqlite.ClienteDbServiceTest.findByCiudadExistenteDevuelveClientes -- Time elapsed: 0.023 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.docencia.sqlite.ClienteDbServiceImpl.create(ClienteDbServiceImpl.java:15)
 	at com.docencia.sqlite.ClienteDbServiceTest.findByCiudadExistenteDevuelveClientes(ClienteDbServiceTest.java:38)

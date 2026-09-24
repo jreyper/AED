@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.algoritmos.OrdenacionServiceTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 6, Skipped: 0, Time elapsed: 0.031 s <<< FAILURE! -- in com.docencia.algoritmos.OrdenacionServiceTest
+Tests run: 7, Failures: 1, Errors: 6, Skipped: 0, Time elapsed: 0.063 s <<< FAILURE! -- in com.docencia.algoritmos.OrdenacionServiceTest
 com.docencia.algoritmos.OrdenacionServiceTest.ordenarBurbujaAscendenteDatosValidosDevuelveListaOrdenada -- Time elapsed: 0.003 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'ordenarBurbujaAscendente'
 	at com.docencia.algoritmos.OrdenacionServiceImpl.ordenarBurbujaAscendente(OrdenacionServiceImpl.java:12)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'ordenarBurbujaAsc
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.algoritmos.OrdenacionServiceTest.ordenarBurbujaAscendenteListaNullLanzaExcepcion -- Time elapsed: 0.003 s <<< FAILURE!
+com.docencia.algoritmos.OrdenacionServiceTest.ordenarBurbujaAscendenteListaNullLanzaExcepcion -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -26,7 +26,7 @@ Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'ordena
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.algoritmos.OrdenacionServiceTest.ordenarBurbujaDescendenteDatosValidosDevuelveListaOrdenada -- Time elapsed: 0.004 s <<< ERROR!
+com.docencia.algoritmos.OrdenacionServiceTest.ordenarBurbujaDescendenteDatosValidosDevuelveListaOrdenada -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'ordenarBurbujaDescendente'
 	at com.docencia.algoritmos.OrdenacionServiceImpl.ordenarBurbujaDescendente(OrdenacionServiceImpl.java:18)
 	at com.docencia.algoritmos.OrdenacionServiceTest.ordenarBurbujaDescendenteDatosValidosDevuelveListaOrdenada(OrdenacionServiceTest.java:12)
@@ -34,7 +34,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'ordenarBurbujaDes
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.algoritmos.OrdenacionServiceTest.ordenarPalabrasAlfabeticamenteDatosValidosDevuelveListaOrdenada -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.algoritmos.OrdenacionServiceTest.ordenarPalabrasAlfabeticamenteDatosValidosDevuelveListaOrdenada -- Time elapsed: 0.003 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'ordenarPalabrasAlfabeticamente'
 	at com.docencia.algoritmos.OrdenacionServiceImpl.ordenarPalabrasAlfabeticamente(OrdenacionServiceImpl.java:24)
 	at com.docencia.algoritmos.OrdenacionServiceTest.ordenarPalabrasAlfabeticamenteDatosValidosDevuelveListaOrdenada(OrdenacionServiceTest.java:13)
@@ -42,7 +42,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'ordenarPalabrasAl
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.algoritmos.OrdenacionServiceTest.invertirListaDatosValidosDevuelveListaInvertida -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.algoritmos.OrdenacionServiceTest.invertirListaDatosValidosDevuelveListaInvertida -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'invertirLista'
 	at com.docencia.algoritmos.OrdenacionServiceImpl.invertirLista(OrdenacionServiceImpl.java:30)
 	at com.docencia.algoritmos.OrdenacionServiceTest.invertirListaDatosValidosDevuelveListaInvertida(OrdenacionServiceTest.java:14)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'invertirLista'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.algoritmos.OrdenacionServiceTest.estaOrdenadaAscendenteListaOrdenadaDevuelveTrue -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.algoritmos.OrdenacionServiceTest.estaOrdenadaAscendenteListaOrdenadaDevuelveTrue -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'estaOrdenadaAscendente'
 	at com.docencia.algoritmos.OrdenacionServiceImpl.estaOrdenadaAscendente(OrdenacionServiceImpl.java:36)
 	at com.docencia.algoritmos.OrdenacionServiceTest.estaOrdenadaAscendenteListaOrdenadaDevuelveTrue(OrdenacionServiceTest.java:15)
@@ -58,7 +58,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'estaOrdenadaAscen
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.algoritmos.OrdenacionServiceTest.estaOrdenadaAscendenteListaDesordenadaDevuelveFalse -- Time elapsed: 0.002 s <<< ERROR!
+com.docencia.algoritmos.OrdenacionServiceTest.estaOrdenadaAscendenteListaDesordenadaDevuelveFalse -- Time elapsed: 0.004 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'estaOrdenadaAscendente'
 	at com.docencia.algoritmos.OrdenacionServiceImpl.estaOrdenadaAscendente(OrdenacionServiceImpl.java:36)
 	at com.docencia.algoritmos.OrdenacionServiceTest.estaOrdenadaAscendenteListaDesordenadaDevuelveFalse(OrdenacionServiceTest.java:16)

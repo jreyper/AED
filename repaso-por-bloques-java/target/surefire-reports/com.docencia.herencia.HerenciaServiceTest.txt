@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.herencia.HerenciaServiceTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 1, Errors: 5, Skipped: 0, Time elapsed: 0.020 s <<< FAILURE! -- in com.docencia.herencia.HerenciaServiceTest
-com.docencia.herencia.HerenciaServiceTest.obtenerNombreCompletoAlumnoValidoDevuelveNombreCompleto -- Time elapsed: 0.002 s <<< ERROR!
+Tests run: 9, Failures: 1, Errors: 5, Skipped: 0, Time elapsed: 0.071 s <<< FAILURE! -- in com.docencia.herencia.HerenciaServiceTest
+com.docencia.herencia.HerenciaServiceTest.obtenerNombreCompletoAlumnoValidoDevuelveNombreCompleto -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'obtenerNombreCompleto'
 	at com.docencia.herencia.HerenciaServiceImpl.obtenerNombreCompleto(HerenciaServiceImpl.java:8)
 	at com.docencia.herencia.HerenciaServiceTest.obtenerNombreCompletoAlumnoValidoDevuelveNombreCompleto(HerenciaServiceTest.java:13)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'obtenerNombreComp
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.herencia.HerenciaServiceTest.obtenerNombreCompletoPersonaNullLanzaExcepcion -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.herencia.HerenciaServiceTest.obtenerNombreCompletoPersonaNullLanzaExcepcion -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -26,7 +26,7 @@ Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'obtene
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.herencia.HerenciaServiceTest.esAlumnoConAlumnoDevuelveTrue -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.herencia.HerenciaServiceTest.esAlumnoConAlumnoDevuelveTrue -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'esAlumno'
 	at com.docencia.herencia.HerenciaServiceImpl.esAlumno(HerenciaServiceImpl.java:14)
 	at com.docencia.herencia.HerenciaServiceTest.esAlumnoConAlumnoDevuelveTrue(HerenciaServiceTest.java:15)
@@ -34,7 +34,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'esAlumno'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.herencia.HerenciaServiceTest.obtenerDescripcionPersonaAlumnoDevuelveDescripcion -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.herencia.HerenciaServiceTest.obtenerDescripcionPersonaAlumnoDevuelveDescripcion -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'obtenerDescripcionPersona'
 	at com.docencia.herencia.HerenciaServiceImpl.obtenerDescripcionPersona(HerenciaServiceImpl.java:20)
 	at com.docencia.herencia.HerenciaServiceTest.obtenerDescripcionPersonaAlumnoDevuelveDescripcion(HerenciaServiceTest.java:16)
@@ -42,7 +42,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'obtenerDescripcio
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.herencia.HerenciaServiceTest.tieneEdadMinimaEdadInsuficienteDevuelveFalse -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.herencia.HerenciaServiceTest.tieneEdadMinimaEdadInsuficienteDevuelveFalse -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'tieneEdadMinima'
 	at com.docencia.herencia.HerenciaServiceImpl.tieneEdadMinima(HerenciaServiceImpl.java:26)
 	at com.docencia.herencia.HerenciaServiceTest.tieneEdadMinimaEdadInsuficienteDevuelveFalse(HerenciaServiceTest.java:17)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'tieneEdadMinima'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.herencia.HerenciaServiceTest.obtenerTipoPersonaAlumnoDevuelveAlumno -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.herencia.HerenciaServiceTest.obtenerTipoPersonaAlumnoDevuelveAlumno -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'obtenerTipoPersona'
 	at com.docencia.herencia.HerenciaServiceImpl.obtenerTipoPersona(HerenciaServiceImpl.java:32)
 	at com.docencia.herencia.HerenciaServiceTest.obtenerTipoPersonaAlumnoDevuelveAlumno(HerenciaServiceTest.java:18)

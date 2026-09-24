@@ -8,14 +8,36 @@ public class ListServiceImpl implements ListService {
 
     @Override
     public List<String> filtrarPalabrasPorLongitud(List<String> palabras, Integer longitudMinima) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'filtrarPalabrasPorLongitud'");
+        List<String> out = new ArrayList<>();
+        if (palabras == null || palabras.isEmpty() || longitudMinima == null || longitudMinima <= 0) {
+            throw new IllegalArgumentException();
+        }
+        for (String palabra : palabras) {
+            if (palabra.length() >= longitudMinima) {
+                out.add(palabra);
+            }
+        }
+        return out;
+
     }
 
     @Override
     public List<Integer> ordenarNumerosAscendente(List<Integer> numeros) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'ordenarNumerosAscendente'");
+        List<Integer> resultado = new ArrayList<>(numeros);
+        if (numeros == null || numeros.isEmpty()){
+            throw new IllegalArgumentException();
+        }
+        for (int i = 0; i < resultado.size(); i++) {
+            for (int j = i + 1; j < resultado.size(); j++) {
+                if (resultado.get(i) > resultado.get(j)) {
+                    int temporal = resultado.get(i);
+                    resultado.set(i, resultado.get(j));
+                    resultado.set(j, temporal);
+                }
+            }
+        }
+
+        return resultado;
     }
 
     @Override
@@ -35,5 +57,5 @@ public class ListServiceImpl implements ListService {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'eliminarNumerosDuplicados'");
     }
-   
+
 }

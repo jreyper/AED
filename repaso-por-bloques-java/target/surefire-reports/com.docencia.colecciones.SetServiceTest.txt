@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.colecciones.SetServiceTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 5, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! -- in com.docencia.colecciones.SetServiceTest
-com.docencia.colecciones.SetServiceTest.obtenerElementosUnicosConDuplicadosDevuelveSetSinDuplicados -- Time elapsed: 0.001 s <<< ERROR!
+Tests run: 6, Failures: 1, Errors: 5, Skipped: 0, Time elapsed: 0.056 s <<< FAILURE! -- in com.docencia.colecciones.SetServiceTest
+com.docencia.colecciones.SetServiceTest.obtenerElementosUnicosConDuplicadosDevuelveSetSinDuplicados -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'obtenerElementosUnicos'
 	at com.docencia.colecciones.SetServiceImpl.obtenerElementosUnicos(SetServiceImpl.java:12)
 	at com.docencia.colecciones.SetServiceTest.obtenerElementosUnicosConDuplicadosDevuelveSetSinDuplicados(SetServiceTest.java:14)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'obtenerElementosU
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.colecciones.SetServiceTest.contieneElementoExistenteDevuelveTrue -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.colecciones.SetServiceTest.contieneElementoExistenteDevuelveTrue -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'contieneElemento'
 	at com.docencia.colecciones.SetServiceImpl.contieneElemento(SetServiceImpl.java:18)
 	at com.docencia.colecciones.SetServiceTest.contieneElementoExistenteDevuelveTrue(SetServiceTest.java:19)
@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'contieneElemento'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.colecciones.SetServiceTest.contieneElementoValorNullLanzaExcepcion -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.colecciones.SetServiceTest.contieneElementoValorNullLanzaExcepcion -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -34,7 +34,7 @@ Caused by: java.lang.UnsupportedOperationException: Unimplemented method 'contie
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.colecciones.SetServiceTest.unirConjuntosDatosValidosDevuelveUnion -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.colecciones.SetServiceTest.unirConjuntosDatosValidosDevuelveUnion -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'unirConjuntos'
 	at com.docencia.colecciones.SetServiceImpl.unirConjuntos(SetServiceImpl.java:24)
 	at com.docencia.colecciones.SetServiceTest.unirConjuntosDatosValidosDevuelveUnion(SetServiceTest.java:29)
@@ -42,7 +42,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'unirConjuntos'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.colecciones.SetServiceTest.intersectarConjuntosConCoincidenciasDevuelveInterseccion -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.colecciones.SetServiceTest.intersectarConjuntosConCoincidenciasDevuelveInterseccion -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'intersectarConjuntos'
 	at com.docencia.colecciones.SetServiceImpl.intersectarConjuntos(SetServiceImpl.java:30)
 	at com.docencia.colecciones.SetServiceTest.intersectarConjuntosConCoincidenciasDevuelveInterseccion(SetServiceTest.java:34)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'intersectarConjun
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.docencia.colecciones.SetServiceTest.restarConjuntosDatosValidosDevuelveDiferencia -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.colecciones.SetServiceTest.restarConjuntosDatosValidosDevuelveDiferencia -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'restarConjuntos'
 	at com.docencia.colecciones.SetServiceImpl.restarConjuntos(SetServiceImpl.java:36)
 	at com.docencia.colecciones.SetServiceTest.restarConjuntosDatosValidosDevuelveDiferencia(SetServiceTest.java:39)

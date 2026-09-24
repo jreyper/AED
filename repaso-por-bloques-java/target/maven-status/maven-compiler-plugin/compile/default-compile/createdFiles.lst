@@ -4,8 +4,8 @@ com/docencia/algoritmos/BusquedaServiceImpl.class
 com/docencia/condicionales/SwitchService.class
 com/docencia/fechas/LocalDateService.class
 com/docencia/sqlite/ClienteDbService.class
-com/docencia/regex/RegexService.class
 com/docencia/colecciones/MapServiceImpl.class
+com/docencia/regex/RegexService.class
 com/docencia/herencia/HerenciaService.class
 com/docencia/cadenas/StringService.class
 com/docencia/numeros/IntegerService.class
@@ -15,8 +15,8 @@ com/docencia/sqlite/ClienteRepository.class
 com/docencia/fechas/LocalDateServiceImpl.class
 com/docencia/ficheros/CsvService.class
 com/docencia/algoritmos/BusquedaService.class
-com/docencia/condicionales/IfElseServiceImpl.class
 com/docencia/colecciones/MapService.class
+com/docencia/condicionales/IfElseServiceImpl.class
 com/docencia/regex/RegexServiceImpl.class
 com/docencia/condicionales/SwitchServiceImpl.class
 com/docencia/colecciones/SetService.class
