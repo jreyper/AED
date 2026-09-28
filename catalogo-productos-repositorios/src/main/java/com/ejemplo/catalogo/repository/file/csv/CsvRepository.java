@@ -3,20 +3,20 @@ package com.ejemplo.catalogo.repository.file.csv;
 import com.ejemplo.catalogo.model.Producto;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.csv.CSVRecord;
 
 import java.io.IOException;
 import java.io.Reader;
+import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.logging.Logger;
 
-public class CsvRepositoryImpl implements IRepository{
-    private Path path;
+public class CsvRepository extends AbstractRepositorty implements IRepository{
+
     private final CSVFormat inputFormat = CSVFormat.DEFAULT.builder()
             .setHeader()
             .setSkipHeaderRecord(true)
@@ -24,26 +24,17 @@ public class CsvRepositoryImpl implements IRepository{
     private final CSVFormat outputFormat = CSVFormat.DEFAULT.builder()
             .setHeader("id", "nombre", "precio")
             .get();
-    List<Producto> productos;
 
-    CsvRepositoryImpl(Path path){
-        if (path == null){
-            throw new RuntimeException("El path es null");
-        }
-        this.path = path;
-        if (Files.notExists(path)){
-            try {
-                Files.createFile(path);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
-        productos = find();
+
+    CsvRepository(Path path) {
+        super(path);
+        productos = load();
     }
 
+    @Override
+    public List<Producto> load() {
 
-    public List<Producto> find() {
-        try (Reader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8);
+        try (Reader reader = Files.newBufferedReader(getPath(), StandardCharsets.UTF_8);
              CSVParser parser = inputFormat.parse(reader)) {
             for (CSVRecord row : parser) {
                 productos.add(new Producto(
@@ -57,28 +48,19 @@ public class CsvRepositoryImpl implements IRepository{
         return productos;
     }
 
-    @Override
-    public List<Producto> findAll() {
-        return productos;
-    }
+
+
+
 
     @Override
-    public Optional<Producto> findById(long id) {
-        return Optional.empty();
-    }
+    public void saveAll(List<Producto> items)  {
 
-    @Override
-    public void create(Producto entity) {
+        try (Writer writer = Files.newBufferedWriter(getPath(), StandardCharsets.UTF_8);
+             CSVPrinter printer = new CSVPrinter(writer, outputFormat)) {
+            for (Producto p : items) printer.printRecord(p.id(), p.nombre(), p.precio());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
-    }
-
-    @Override
-    public boolean update(Producto entity) {
-        return false;
-    }
-
-    @Override
-    public boolean delete(long id) {
-        return false;
     }
 }

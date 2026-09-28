@@ -14,7 +14,9 @@ import java.util.List;
 import java.util.Optional;
 
 public class CsvCrudDemo {
-    public record Producto(long id, String nombre, double precio) {}
+    public record Producto(long id, String nombre, double precio) {
+
+    }
 
     private final Path path;
     private final CSVFormat inputFormat = CSVFormat.DEFAULT.builder()

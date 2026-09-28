@@ -6,34 +6,32 @@ import java.util.List;
 import java.util.Optional;
 
 public interface IRepository {
+
     /**
-     * Funcion que obtiene todos los productos
-     * @return lista productos
+     * Funcion que obtiene todos los elementos
+     * @return List de productos
      */
     List<Producto> findAll();
 
     /**
      * Funcion que obtiene el elemento
-     * @param id identificador del producto
-     * @return optional del producto
+     * @param id Identificador del producto
+     * @return Optinial del productor
      */
     Optional<Producto> findById(long id);
 
     /**
-     * Crea un producto
-     * @param entity
+     * Crea el producto
+     * @param producto
      */
-    void create(Producto entity);
+    void create(Producto producto);
 
     /**
-     * actualiza un producto
-     * @param entity
+     * Actualiza un producto
+     * @param producto
+     * @return
      */
-    boolean update(Producto entity);
+    boolean update(Producto producto);
 
-    /**
-     * elimina un producto
-     * @param id
-     */
     boolean delete(long id);
 }
