@@ -13,9 +13,8 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
-import java.util.Optional;
 
-public class CsvRepository extends AbstractRepositorty implements IRepository{
+public class CsvRepository extends AbstractRepository{
 
     private final CSVFormat inputFormat = CSVFormat.DEFAULT.builder()
             .setHeader()
@@ -33,7 +32,6 @@ public class CsvRepository extends AbstractRepositorty implements IRepository{
 
     @Override
     public List<Producto> load() {
-
         try (Reader reader = Files.newBufferedReader(getPath(), StandardCharsets.UTF_8);
              CSVParser parser = inputFormat.parse(reader)) {
             for (CSVRecord row : parser) {

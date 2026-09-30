@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.util.List;
 import java.util.Optional;
 
-public abstract class AbstractRepositorty implements IRepository{
+public abstract class AbstractRepository implements IRepository{
 
     private Path path;
     List<Producto> productos;
@@ -16,7 +16,7 @@ public abstract class AbstractRepositorty implements IRepository{
         return path;
     }
 
-    public AbstractRepositorty(Path path) {
+    public AbstractRepository(Path path) {
         if (path == null) {
             throw new RuntimeException("El path es null");
         }
