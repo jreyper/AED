@@ -1,11 +1,14 @@
 package es.codelearnacademy.filelab.json;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import es.codelearnacademy.filelab.model.Producto;
 import es.codelearnacademy.filelab.repository.AbstractFileRepository;
 import es.codelearnacademy.filelab.repository.IProductoRepository;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ProductoJsonRepository
@@ -26,16 +29,19 @@ public class ProductoJsonRepository
 
     @Override
     protected Long getId(Producto producto) {
-        throw new UnsupportedOperationException("Función no implementada");
+        return producto.id();
     }
 
     @Override
     protected List<Producto> readAll() throws IOException {
-        throw new UnsupportedOperationException("Función no implementada");
+        if (!Files.exists(path)){
+            return new ArrayList<>();
+        }
+        return mapper.readValue(path.toFile(), new TypeReference<List<Producto>>() {});
     }
 
     @Override
     protected void writeAll(List<Producto> productos) throws IOException {
-        throw new UnsupportedOperationException("Función no implementada");
+        mapper.writeValue(path.toFile(),productos);
     }
 }
