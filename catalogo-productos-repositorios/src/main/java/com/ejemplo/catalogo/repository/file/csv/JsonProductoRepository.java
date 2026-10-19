@@ -11,9 +11,9 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.List;
 
-public class JsonRepository extends AbstractRepository{
+public class JsonProductoRepository extends AbstractProductoRepository {
     private final ObjectMapper mapper;
-    public JsonRepository(Path path) {
+    public JsonProductoRepository(Path path) {
         super(path);
         productos = load();
         mapper = new ObjectMapper();

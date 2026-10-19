@@ -1,7 +1,7 @@
 package com.ejemplo.catalogo.configuration;
 
-import com.ejemplo.catalogo.repository.file.csv.IRepository;
-import com.ejemplo.catalogo.repository.file.csv.JsonRepository;
+import com.ejemplo.catalogo.repository.file.csv.IProductoRepository;
+import com.ejemplo.catalogo.repository.file.csv.JsonProductoRepository;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -14,7 +14,7 @@ import java.util.Properties;
 public class AppConfiguration {
     private static Path path;
     private static Properties props;
-    static IRepository repository;
+    static IProductoRepository repository;
     public static void main(String[] args) {
         path = Path.of("data", "app.properties");
         props = new Properties();
@@ -32,7 +32,7 @@ public class AppConfiguration {
             throw new RuntimeException(e);
         }
         if (props.getProperty("storage.format").equals("json")){
-            repository = new JsonRepository(Path.of(props.getProperty("storage.path")));
+            repository = new JsonProductoRepository(Path.of(props.getProperty("storage.path")));
         }
     }
 }
