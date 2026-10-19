@@ -14,30 +14,25 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-public class VehiculoDao extends ConexionBD{
+public class VehiculoDao extends AbstractDao<Vehiculo>{
     private  ConexionBD conexionBD;
 
     public VehiculoDao(String url) {
         super(url);
     }
-    
+
+    @Override
+    Vehiculo mapToClass(ResultSet rs) {
+        try {
+            return new Vehiculo(rs.getString(1), rs.getString(2),rs.getString(3), rs.getInt(4));
+        } catch (Exception e) {
+            throw new AplicationException(e.getMessage(), e.getCause());
+        }
+    }
 
     public List<Vehiculo> listar() {
-        List<Vehiculo> lista = new ArrayList<>();
         String query = "select matricula, marca, modelo, anio from Vehiculos ORDER BY matricula";
-
-        try (Connection connection = this.obtenerConexion()) {
-            PreparedStatement ps = connection.prepareStatement(query);
-            ResultSet rs = ps.executeQuery();
-
-            while (rs.next()) {
-                lista.add(mapeoVehiculo(rs));
-            }
-            return lista;
-
-        } catch (Exception e) {
-            throw new AplicationException(e.getMessage(), e);
-        }
+        return consultar(query);
     }
 
     public Optional<Vehiculo> buscarPorMatricula(String matricula) {
@@ -164,8 +159,26 @@ public class VehiculoDao extends ConexionBD{
     }
 
     public Map<String, Integer> contarPorMarca() {
-        return null;
+        Map<String, Integer> contador = new LinkedHashMap<>();
+        String sql = "SELECT marca, COUNT(*) AS cantidad FROM Vehiculos WHERE marca LIKE ? GROUP BY marca ORDER BY marca";
+
+        try (Connection connection = this.obtenerConexion();
+             PreparedStatement ps = connection.prepareStatement(sql)) {
+
+            ps.setString(1, "%%");
+
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    contador.put(rs.getString("marca"), rs.getInt("cantidad"));
+                }
+            }
+
+        } catch (SQLException e) {
+            throw new AplicationException(e.getMessage(), e);
+        }
+        return contador;
     }
+
 
     private Vehiculo mapeoVehiculo(ResultSet rs) {
 
