@@ -25,7 +25,7 @@ public abstract class AbstractDao<T> extends ConexionDB {
             List<T> resultado = new ArrayList<>();
             while (rs.next()) {
                 Optional<T> entidad = mapRsToClass(rs);
-                if (entidad.isEmpty()) return List.of(); // No devolver una lista parcial
+                if (entidad.isEmpty()) return List.of();
                 resultado.add(entidad.get());
             }
             return resultado;
