@@ -18,36 +18,89 @@ public class ClienteDao  {
     }
     
     public List<Cliente> listar() {
-        // TODO: implementar según el contrato del README.
-        return List.of();
+        try (var em = managerFactory.createEntityManager()) {
+            return em.createQuery(
+                            "select c from ClienteEntity c order by c.nombre",
+                            ClienteEntity.class)
+                    .getResultStream()
+                    .map(ClienteMapper::toDomain)
+                    .toList();
+        }
     }
     public Optional<Cliente> buscarPorId(Integer id) {
-        // TODO: implementar según el contrato del README.
-        return Optional.empty();
+        try (var em = managerFactory.createEntityManager()) {
+            return Optional.ofNullable(em.find(ClienteEntity.class, id))
+                    .map(ClienteMapper::toDomain);
+        }
     }
-    public int insertar(Cliente dato) {
+
+    public Optional<Cliente> buscarPorEmail(String email) {
+        try (var em = managerFactory.createEntityManager()) {
+            return em.createQuery("select c from ClienteEntity c where c.email = :email", ClienteEntity.class)
+                            .setParameter("email", email)
+                            .getResultStream().findFirst().map(ClienteMapper::toDomain);
+        }
+    }
+        
+
+    public int insertar(Cliente cliente) {
+        if (cliente == null){
+            return 0;
+        }
         try (var em = managerFactory.createEntityManager()) {
             var tx = em.getTransaction();
             try {
                 tx.begin();
-                ClienteEntity entidad = ClienteMapper.toEntity(dato);
+                ClienteEntity entidad = ClienteMapper.toEntity(cliente);
                 em.persist(entidad);
                 em.flush(); // Necesario aquí para leer inmediatamente el ID generado
-                dato.setIdCliente(entidad.getIdCliente());
+                cliente.setIdCliente(entidad.getIdCliente());
                 tx.commit();
-                return dato.getIdCliente();
+                return cliente.getIdCliente();
+            } catch (RuntimeException ex) {
+                if (tx.isActive()) tx.rollback();
+                return 0;
+            }
+        }
+    }
+    public int actualizar(Cliente cliente) {
+        try (var em = managerFactory.createEntityManager()) {
+            var tx = em.getTransaction();
+            try {
+                tx.begin();
+                ClienteEntity c = em.find(ClienteEntity.class, cliente.getIdCliente());
+                if (c == null) {
+                    tx.commit();
+                    return 0;
+                }
+                ClienteEntity clienteEntityActualizado = ClienteMapper.toEntity(cliente);
+                c.setNombre(clienteEntityActualizado.getNombre());
+                c.setEmail(clienteEntityActualizado.getEmail()); // dirty checking
+                tx.commit();           // Hibernate detecta el cambio
+                return 1;
             } catch (RuntimeException ex) {
                 if (tx.isActive()) tx.rollback();
                 throw ex;
             }
         }
     }
-    public int actualizar(Cliente dato) {
-        // TODO: implementar según el contrato del README.
-        return 0;
-    }
     public int eliminar(Integer id) {
-        // TODO: implementar según el contrato del README.
-        return 0;
+        try (var em = managerFactory.createEntityManager()) {
+            var tx = em.getTransaction();
+            try {
+                tx.begin();
+                ClienteEntity c = em.find(ClienteEntity.class, id);
+                if (c == null) {
+                    tx.commit();
+                    return 0;
+                }
+                em.remove(c);
+                tx.commit();
+                return 1;
+            } catch (RuntimeException ex) {
+                if (tx.isActive()) tx.rollback();
+                throw ex;
+            }
+        }
     }
 }
