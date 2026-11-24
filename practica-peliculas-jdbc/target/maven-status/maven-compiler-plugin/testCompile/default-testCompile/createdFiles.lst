@@ -1,0 +1,3 @@
+ies/puesto/peliculas/mapper/PeliculaMappersTest.class
+ies/puesto/peliculas/repository/jdbc/PeliculaJdbcMappersTest.class
+ies/puesto/peliculas/controller/PeliculaJdbcControllerTest.class

@@ -1,0 +1,16 @@
+ies/puesto/peliculas/repository/jdbc/PeliculaRowMapper.class
+ies/puesto/peliculas/controller/api/PeliculaRequest.class
+ies/puesto/peliculas/PeliculasApplication.class
+ies/puesto/peliculas/repository/jdbc/PeliculaEntityMapper.class
+ies/puesto/peliculas/controller/api/PeliculaEdicionRequest.class
+ies/puesto/peliculas/repository/PeliculaRepository.class
+ies/puesto/peliculas/controller/mapper/PeliculaApiMapper.class
+ies/puesto/peliculas/model/Pelicula.class
+ies/puesto/peliculas/controller/api/PeliculaResponse.class
+ies/puesto/peliculas/controller/PeliculaJdbcController.class
+ies/puesto/peliculas/service/modelo/DatosCreacionPelicula.class
+ies/puesto/peliculas/service/PeliculaService.class
+ies/puesto/peliculas/service/modelo/DatosEdicionPelicula.class
+ies/puesto/peliculas/service/mapper/PeliculaDominioMapper.class
+ies/puesto/peliculas/repository/jdbc/PeliculaEntity.class
+ies/puesto/peliculas/repository/jdbc/PeliculaJdbcRepository.class

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ies.puesto.peliculas.controller.PeliculaJdbcControllerTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.87 s -- in ies.puesto.peliculas.controller.PeliculaJdbcControllerTest

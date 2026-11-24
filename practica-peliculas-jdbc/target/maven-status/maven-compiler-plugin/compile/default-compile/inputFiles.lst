@@ -1,0 +1,16 @@
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/PeliculasApplication.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/controller/PeliculaJdbcController.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/controller/api/PeliculaEdicionRequest.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/controller/api/PeliculaRequest.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/controller/api/PeliculaResponse.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/controller/mapper/PeliculaApiMapper.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/model/Pelicula.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/repository/PeliculaRepository.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/repository/jdbc/PeliculaEntity.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/repository/jdbc/PeliculaEntityMapper.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/repository/jdbc/PeliculaJdbcRepository.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/repository/jdbc/PeliculaRowMapper.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/service/PeliculaService.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/service/mapper/PeliculaDominioMapper.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/service/modelo/DatosCreacionPelicula.java
+/mnt/c/Users/javie/AED/practica-peliculas-jdbc-javier/src/main/java/ies/puesto/peliculas/service/modelo/DatosEdicionPelicula.java

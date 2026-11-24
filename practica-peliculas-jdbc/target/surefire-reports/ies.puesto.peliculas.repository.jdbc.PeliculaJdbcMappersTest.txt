@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ies.puesto.peliculas.repository.jdbc.PeliculaJdbcMappersTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.179 s -- in ies.puesto.peliculas.repository.jdbc.PeliculaJdbcMappersTest
