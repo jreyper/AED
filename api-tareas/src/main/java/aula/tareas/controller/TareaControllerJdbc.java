@@ -27,7 +27,7 @@ public class TareaControllerJdbc {
     }
 
     @GetMapping
-    @Operation(summary = "Obtener todos las tareas desde el fichero jdbc")
+    @Operation(summary = "Obtener todos las tareas ")
     @ApiResponses(@ApiResponse(responseCode = "200", description = "Se obtiene el listado de tareas"))
     List<TareaRequest> listar() {
         return serviceJdbc.listar();
@@ -49,13 +49,14 @@ public class TareaControllerJdbc {
             @ApiResponse(responseCode = "201", description = "Tarea creada"),
             @ApiResponse(responseCode = "400", description = "Tarea existe")
     })
-    ResponseEntity<TareaRequest> crear(@Valid @RequestBody TareaControllerJdbc.NuevaTarea peticion) {
-        TareaRequest tareaRequest = serviceJdbc.crear(peticion.titulo());
-        return ResponseEntity.created(URI.create("/api/jdbc/tareas/" + tareaRequest.id())).body(tareaRequest);
+    ResponseEntity<TareaRequest> crear(@Valid @RequestBody TareaControllerCsv.NuevaTarea peticion) {
+        TareaRequest tarea = serviceJdbc.crear(peticion.titulo());
+        return ResponseEntity.created(URI.create("/api/jdbc/tareas/" + tarea.id())).body(tarea);
     }
 
     @PutMapping("/{id}")
-    ResponseEntity<TareaRequest> update(@PathVariable long id, @Valid @RequestBody TareaRequest tarea){
+    ResponseEntity<TareaRequest> update (@PathVariable long id, @Valid @RequestBody TareaRequest tarea) {
+
         return null;
     }
 

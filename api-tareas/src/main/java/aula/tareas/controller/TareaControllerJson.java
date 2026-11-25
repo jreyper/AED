@@ -49,9 +49,9 @@ public class TareaControllerJson {
             @ApiResponse(responseCode = "201", description = "Tarea creada"),
             @ApiResponse(responseCode = "400", description = "Tarea existe")
     })
-    ResponseEntity<TareaRequest> crear(@Valid @RequestBody TareaControllerJson.NuevaTarea peticion) {
-        TareaRequest tareaRequest = serviceJson.crear(peticion.titulo());
-        return ResponseEntity.created(URI.create("/api/json/tareas/" + tareaRequest.id())).body(tareaRequest);
+    ResponseEntity<TareaRequest> crear(@Valid @RequestBody TareaControllerCsv.NuevaTarea peticion) {
+        TareaRequest tarea = serviceJson.crear(peticion.titulo());
+        return ResponseEntity.created(URI.create("/api/json/tareas/" + tarea.id())).body(tarea);
     }
 
     public record NuevaTarea(@NotBlank String titulo) {}

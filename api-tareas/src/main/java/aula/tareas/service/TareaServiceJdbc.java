@@ -10,15 +10,15 @@ import java.util.List;
 @Service("tareaServiceJdbc")
 public class TareaServiceJdbc implements ITareaService{
 
-    private final ITareaRepository tareaRepositoryJdbc;
+    private final ITareaRepository tareaRepositoryJson;
 
-    public TareaServiceJdbc(@Qualifier("tareaRepositoryJdbc") ITareaRepository tareaRepositoryJdbc) {
-        this.tareaRepositoryJdbc = tareaRepositoryJdbc;
+    public TareaServiceJdbc(@Qualifier("repositoryJdbc") ITareaRepository tareaRepositoryJson) {
+        this.tareaRepositoryJson = tareaRepositoryJson;
     }
 
     @Override
     public List<TareaRequest> listar() {
-        return tareaRepositoryJdbc.findAll();
+        return tareaRepositoryJson.findAll();
     }
 
     @Override
@@ -28,6 +28,6 @@ public class TareaServiceJdbc implements ITareaService{
 
     @Override
     public TareaRequest crear(String titulo) {
-        return tareaRepositoryJdbc.create(titulo);
+        return tareaRepositoryJson.create(titulo);
     }
 }

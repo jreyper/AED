@@ -72,7 +72,7 @@ public class TareaRepositoryJson implements ITareaRepository{
     }
 
     @Override
-    public TareaRequest update(TareaRequest tareaRequest) {
+    public TareaRequest update(TareaRequest tarea) {
         return null;
     }
 

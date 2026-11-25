@@ -5,6 +5,7 @@ import java.util.concurrent.ConcurrentSkipListMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 import aula.tareas.api.TareaRequest;
+import aula.tareas.modelo.Tarea;
 import aula.tareas.repository.ITareaRepository;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -34,6 +35,10 @@ public class TareaServiceCsv implements ITareaService{
 
     public TareaRequest buscar(long id) {
         return repository.findById(id);
+    }
+
+    public TareaRequest buscar(Tarea tarea) {
+        return repository.findById(tarea.getIdentificador());
     }
 
     public TareaRequest crear(String titulo) {

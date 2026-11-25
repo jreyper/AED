@@ -37,7 +37,7 @@ public class TareaRepository implements ITareaRepository{
     }
 
     @Override
-    public TareaRequest update(TareaRequest tareaRequest) {
+    public TareaRequest update(TareaRequest tarea) {
         // buscar la tarea por el id
         // actualizar la tarea
         return null;

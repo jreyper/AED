@@ -9,27 +9,30 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository("tareaRepositoryJdbc")
-public class TareaRepositoryJdbc implements ITareaRepository {
-        
+@Repository("repositoryJdbc")
+public class TareaRepositoryJdbc implements ITareaRepository{
+
     private String jdbcUrl;
 
-    public TareaRepositoryJdbc(){
-    this("jdbc:sqlite:data/tareas.sqlite3");
+    public TareaRepositoryJdbc() {
+        this("jdbc:sqlite:data/tareas.sqlite3");
     }
-    
-    public TareaRepositoryJdbc(String jdbcUrl){
+
+    public TareaRepositoryJdbc(String jdbcUrl) {
         this.jdbcUrl = jdbcUrl;
-        if (!validarUrl(jdbcUrl)) {
+        if(!validarUrl(jdbcUrl)) {
             throw new RuntimeException("No se encuentra la bbdd");
         }
     }
 
-    public boolean validarUrl(String jdbcUrl){
+    private boolean validarUrl(String jdbcUrl) {
         String url = jdbcUrl.replace("jdbc:sqlite:", "");
         Path path = Path.of(url);
         return (Files.exists(path));
     }
+
+
+
 
     @Override
     public TareaRequest create(String titulo) {
@@ -43,29 +46,29 @@ public class TareaRepositoryJdbc implements ITareaRepository {
 
     @Override
     public List<TareaRequest> findAll() {
-        String sql = "SELECT id, titulo FROM tareas_jdbc ORDER BY id";
+        String sql = "select id, titulo from tareas_jdbc order by id";
         List<TareaRequest> tareas = new ArrayList<>();
-        try(Connection c = DriverManager.getConnection(jdbcUrl);
-            PreparedStatement ps = c.prepareStatement(sql);
-            ResultSet rs = ps.executeQuery()){
-            while (rs.next()){
-                tareas.add(new TareaRequest(
-                        rs.getLong("id"),
-                        rs.getString("titulo")));
+        try (Connection c = DriverManager.getConnection(jdbcUrl);
+             PreparedStatement ps = c.prepareStatement(sql);
+             ResultSet rs = ps.executeQuery()) {
+            while (rs.next()) {
+                 tareas.add(new TareaRequest(
+                 rs.getLong("id"),
+                 rs.getString("titulo")));
             }
-        }catch (SQLException e){
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
         return tareas;
     }
 
-    @Override
+        @Override
     public TareaRequest findById(long identificador) {
         return null;
     }
 
     @Override
-    public TareaRequest update(TareaRequest tareaRequest) {
+    public TareaRequest update(TareaRequest tarea) {
         return null;
     }
 }

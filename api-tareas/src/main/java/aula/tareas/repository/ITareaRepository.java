@@ -9,5 +9,5 @@ public interface ITareaRepository {
     public boolean delete(long identificador);
     public List<TareaRequest> findAll();
     public TareaRequest findById(long identificador);
-    public TareaRequest update(TareaRequest tareaRequest);
+    public TareaRequest update(TareaRequest tarea);
 }

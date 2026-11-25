@@ -1,7 +1,7 @@
 package aula.tareas.entity;
 
 public class TareaEntityJdbc {
-    
+
     private Long id;
     private String titulo;
 
